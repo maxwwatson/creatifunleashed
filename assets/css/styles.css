@@ -1,0 +1,160 @@
+/* CSS For Creatif Unleashed! */
+
+
+
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Nav Menu */ 
+#navbar {
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+#nav-links a {
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/****** Hamburger Side Menu CSS  ******/
+.container {
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    display: none;
+    z-index: 2;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333; 
+    margin: 6px 0; 
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px); 
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #fff; /* white*/
+    opacity: 70%;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  /* .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  } */
+/* END */ 
+
+/****** Mobile categories dropdown ******/
+.mobile-categories {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.mobile-categories:after {
+    content: '\02795'; /* unicode for plus sign */
+    font-size: 13px;
+    color: #fff; 
+    float: right;
+
+} 
+
+.active:after {
+    content: '\2796'; /* unicode for minus sign */
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+/****** media queries ******/ 
+/* When screen is under 600px wide, hide the top nav and display the hamburger menu */ 
+@media screen and (max-width: 600px) {
+    #nav-links a:not(#mySideNav a) { display: none; }
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    
+}

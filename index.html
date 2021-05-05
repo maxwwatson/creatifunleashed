@@ -6,6 +6,7 @@
 
   <title>Creatif Unleashed</title>
 
+  <!-- A lot of this is from a boilerplate. Didn't fill it all in yet-->
   <script type="module">
     document.documentElement.classList.remove('no-js');
     document.documentElement.classList.add('js');
@@ -34,14 +35,40 @@
 
 <body>
   <!-- Header -->
-    <header>
-
-    </header>
+  <header id="navbar" class="flex">
+    <h1>Creatif Unleashed</h1>
+    <nav class="flex topnav" id="nav-links">
+      <a href="" class="">Home</a>
+      <a href="" class="">About</a>
+      <div class="container hamburger-menu" onclick="myFunction(this); activateNav();">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <!-- side nav-->
+      <div id="mySideNav" class="sidenav">
+        <a href="" class="">Home</a>
+        <a href="" class="">About</a>
+      </div>
+    </nav>
+  </header>
   <!-- Content Section -->
-    
+  <button class="mobile-categories">Categories</button>
+  <div class="panel">
+    <a href="">Link1</a>
+    <a href="">Link1</a>
+    <a href="">Link1</a>
+  </div>
+  <div class="wrapper flex">
 
+  </div>
 
-  <script src="/assets/js/xy-polyfill.js" nomodule></script>
-  <script src="/assets/js/script.js" type="module"></script>
+  <!-- Footer -->
+  <footer>
+
+  </footer>
+
+<!-- my JS -->
+<script src="/assets/js/script.js" type="text/javascript"></script>
 </body>
 </html>
