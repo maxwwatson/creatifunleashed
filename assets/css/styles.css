@@ -162,14 +162,15 @@ body {
 .panel {
     padding: 0 18px;
     background-color: #f7f7f7;
+
     color: black;
     overflow: hidden;
     text-align: center;
-    
     transition: max-height 0.2s ease-out;
 }
 
 .panel a {
+    padding: 10px;
     display: block;
     color: black;
     text-decoration: none;
